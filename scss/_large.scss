@@ -1,0 +1,143 @@
+@media (min-width: 992px) {
+    .navigation {
+        justify-content: center;
+        width: 100vw;
+        margin: 0 auto;
+        box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.2);
+
+        &__largeListMenu {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+        }
+
+        &__mobileButton {
+            width: 25%;
+            padding-right: 50px;
+        }
+
+        &__logoBox {
+            width: 25%;
+            padding-left: 50px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__linkPhone {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        &__linkPhoneIcon {
+            margin-right: 10px;
+        }
+
+        &__logo {
+            width: 150px;
+            height: 110px;
+        }
+    }
+
+    .info {
+        position: relative;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        &__slideBox {
+            width: 23%;
+            min-width: 23%;
+            margin-right: 1%;
+            margin-left: 1%;
+            padding: 5rem 2rem;
+
+            &:nth-child(3) {
+                margin-top: 0px;
+            }
+    
+            &:nth-child(4) {
+                margin-top: 0px;
+            }
+        }
+            
+        &__decorationPlus {
+            display: block;
+            position: absolute;
+            top: 25%;
+            left: -5%;
+            transform: rotate(45deg);
+        }
+            
+        &__patternsPlus {
+            display: block;
+            position: absolute;
+            top: 80%;
+            left: 107.5%;
+        }    
+
+        &__textBox {
+            height: 90px;
+        }
+    }
+
+    .aboutUs {
+        text-align: center;
+        
+        &__wrapper {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        &__emptyArticle {
+            width: 50%;
+            display: block;
+        }
+
+        &__textArticle {
+            width: 50%;
+        }
+    }
+
+    .gallery {
+    
+        &__image {
+            width: 25%;
+            padding: 5px 5px;
+        }
+    }
+
+    .menu {
+        max-width: 1250px;
+        margin: 0 auto;
+    
+        &__box {
+            width: 30%;
+            display: flex;
+        }
+
+        &__box:hover .paragraphBig {
+            color: $yellow;
+        }
+
+        &__menu {
+            margin-top: 20px;
+        }
+
+        &__elementMenu {
+            width: 12.5%;
+        }
+    }
+
+    .footer {
+
+        &__firstArticle {
+            max-width: 1300px;
+            margin: 0 auto;
+        }       
+    }
+}

@@ -1,0 +1,187 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+$white: #fff;
+$yellow: #d8a723;
+$black: #000;
+
+html {
+	font-size: 62.5%;
+	font-family: 'Nimbus Sans L Regular';
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+@font-face {
+	font-family: 'Nimbus Sans L Regular';
+	src: url(/fonts/nimbus-sans-l.regular.otf);
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Nimbus Sans L Bold';
+	src: url(/fonts/nimbus-sans-l.regular.otf);
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Italianno';
+	src: url(/fonts/Italianno-Regular.ttf);
+	font-style: italic;
+	font-weight: normal;
+}
+
+.active {
+	display: flex !important;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.activeElement {
+	color: $yellow;
+	border-bottom: 2px solid $yellow;
+}
+
+.headingOne {
+	font-family: 'Nimbus Sans L Regular';
+	font-size: 3.2rem;
+	text-transform: uppercase;
+	color: $white;
+}
+
+.headingTwo {
+	font-family: 'Nimbus Sans L Regular';
+	font-size: 2.1rem;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	font-family: 'Nimbus Sans L Regular';
+	font-size: 1.6rem;
+}
+
+.paragraphSmall {
+	font-family: 'Nimbus Sans L Regular';
+	font-size: 1.2rem;
+	padding-top: 10px;
+	font-weight: 300;
+}
+
+.paragraphBig {
+	font-family: 'Nimbus Sans L Regular';
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin: 10px 0px;
+	transition: 0.2s color;
+}
+
+.link {
+	font-family: 'Nimbus Sans L Regular';
+	font-size: 2rem;
+	text-decoration: none;
+	color: $black;
+	padding: 0px 20px;
+	transition: 0.5s color;
+}
+
+.link:hover {
+	color: $yellow;
+}
+
+.button {
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	background-color: $yellow;
+	border-radius: 5px;
+	border: none;
+	color: $white;
+	margin-top: 20px;
+	padding: 10px 30px;
+	transition: 0.5s background-color;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: rgb(194, 150, 30);
+}
+
+.decorativeLine {
+	width: 80px;
+	height: 3px;
+	background-color: $yellow;
+	margin: 10px 0px;
+}
+
+.subTitle {
+	font-family: 'Italianno';
+	font-size: 3.2rem;
+	color: $yellow;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.headingOne {
+		font-size: 4.2rem;
+		text-align: center;
+	}
+
+	.headingTwo {
+		font-family: 'Nimbus Sans L Regular';
+		font-size: 2.5rem;
+		text-transform: uppercase;
+	}
+
+	.subTitle {
+		font-size: 4.2rem;
+	}
+
+	.paragraph {
+		font-size: 1.8rem;
+		line-height: 1.6;
+	}
+
+	.paragraphBig {
+		font-size: 2rem;
+	}
+
+	.decorativeLine {
+		height: 4px;
+	}
+
+	.button {
+		font-size: 1.8rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.headingOne {
+		text-align: center;
+		font-size: 5.2rem;
+	}
+
+	.headingTwo {
+		font-size: 2.8rem;
+	}
+
+	.subTitle {
+		font-size: 5.2rem;
+	}
+
+	.decorativeLine {
+		height: 4px;
+		margin: 15px 0px;
+	}
+}
