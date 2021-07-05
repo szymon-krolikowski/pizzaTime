@@ -16,21 +16,21 @@ html {
 
 @font-face {
   font-family: 'Nimbus Sans L Regular';
-  src: url(/fonts/nimbus-sans-l.regular.otf);
+  src: url(./fonts/nimbus-sans-l.regular.otf);
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Nimbus Sans L Bold';
-  src: url(/fonts/nimbus-sans-l.regular.otf);
+  src: url(./fonts/nimbus-sans-l.regular.otf);
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Italianno';
-  src: url(/fonts/Italianno-Regular.ttf);
+  src: url(./fonts/Italianno-Regular.ttf);
   font-style: italic;
   font-weight: normal;
 }
@@ -580,7 +580,7 @@ html {
 .header {
   width: 100vw;
   height: 100vh;
-  background-image: url("/image/headerPizza1.jpg");
+  background-image: url("./image/headerPizza1.jpg");
   background-size: cover;
   background-position: center;
   padding: 70px 20px 0px;
